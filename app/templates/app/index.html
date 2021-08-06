@@ -1,0 +1,18 @@
+{% if matches_list %}
+    <table>
+        <tr>
+            <th>Päivämäärä</th>
+            <th>Sijainti</th>
+            <th>Vastustaja</th>
+            <th>Toimitsijat</th>
+        </tr>
+        {% for m in matches_list %}
+        <tr>
+            <td>{{ m.date }}</td>
+            <td>{{ m.place }}</td>
+            <td>{{ m.opponent }}</td>
+            <td>Kello: {{ m.kello }}, kuulutus: {{ m.kuulutus }}, jäähyt: {{ m.jäähy_1 }} ja {{ m.jäähy_2 }}, pöytäkirja: {{ m.pöytäkirja }}, titu: {{ m.titu }}, kuvaaja: {{ m.kuvaaja }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endif %}
