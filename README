@@ -1,0 +1,33 @@
+Tämä Django-sovellus automatisoi toimitsijavuorot. 
+
+Lisätään pelaajat, vanhemmat ja pelit. Vanhempien lisätessä valitaan,
+mitkä toimitsijatehtävät hän on valmis ottamaan vastaan.
+
+Kun pelaajat on lisätty peliin, sovellus luo toimitsijalistan
+sen perusteella, mikä pelaaja osallistuu peliin, mitkä ovat pelaajan
+vanhemmat ja mitkä tehävät vanhemmat osaavat tehdä. Valinta tapahtuu
+satunnaisesti.
+
+Sovelluksessa on kaksi osaa:
+
+ - admin UI, jossa lisätään kaikki tiedot ja luodaan toimitsijalista
+
+ - indeksi-sivu, jossa on listattu pelit ja valitut toimitsijat
+
+Molemmat sivustot vaativat tunnistautumista. Kannattaa luoda ainakin kaksi 
+käyttäjää:
+
+ - djangon superuser, jolla on luonnolisesti pääty /admin osioon
+
+ - tävällinen käyttäjä, jolla on pääsy vain indeksi-sivustoon. Tämä 
+käyttäjätunnus/salasana voi antaa joukkueen vanhemmille, jotta ne nakevat,
+milloin heidän toimitsijavuoro tulee.
+
+
+TODO:
+
+ - "Titu" ja "pöytäkirja" ovat "joko/tai" tehtävät. Peliin pitää lisätä vipu
+"Titu?", minkä perusteella valitaan joko titu- tai pöytäkirjatoimitsija
+
+ - ilmoittaminen vuorosta teksitiviestillä vai WhatsAppilla
+ 
